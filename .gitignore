@@ -34,3 +34,5 @@ $tf*/
 .vs/
 
 *.ncrunchproject
+
+.idea
