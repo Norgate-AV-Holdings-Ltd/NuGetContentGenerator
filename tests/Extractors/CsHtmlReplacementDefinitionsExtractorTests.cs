@@ -24,7 +24,7 @@ contents";
 
             // Assert
             Assert.That(result, Is.EqualTo("contents"));
-            Assert.That(definitions, Is.EqualTo("replacement 1\r\nreplacement 2\r\n"));
+            Assert.That(definitions, Is.EqualTo("replacement 1\nreplacement 2\n"));
         }
 
         [Test]
@@ -45,7 +45,7 @@ contents";
 
             // Assert
             Assert.That(result, Is.EqualTo("contents"));
-            Assert.That(definitions, Is.EqualTo("replacement 1\r\nreplacement 2\r\n"));
+            Assert.That(definitions, Is.EqualTo("replacement 1\nreplacement 2\n"));
         }
 
         [Test]

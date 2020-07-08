@@ -24,7 +24,7 @@ contents";
 
             // Assert
             Assert.That(result, Is.EqualTo("contents"));
-            Assert.That(definitions, Is.EqualTo("replacement 1\r\nreplacement 2\r\n"));
+            Assert.That(definitions, Is.EqualTo("replacement 1\nreplacement 2\n"));
         }
 
         [Test]
@@ -45,7 +45,7 @@ contents";
 
             // Assert
             Assert.That(result, Is.EqualTo("contents"));
-            Assert.That(definitions, Is.EqualTo("replacement 1\r\nreplacement 2\r\n"));
+            Assert.That(definitions, Is.EqualTo("replacement 1\nreplacement 2\n"));
         }
 
         [Test]
@@ -66,8 +66,8 @@ contents";
             var result = extractor.ExtractReplacementDefinitions(text, out definitions);
 
             // Assert
-            Assert.That(result, Is.EqualTo("<xml>\r\n</xml>"));
-            Assert.That(definitions, Is.EqualTo("replacement 1\r\nreplacement 2\r\n"));
+            Assert.That(result, Is.EqualTo("<xml>\n</xml>"));
+            Assert.That(definitions, Is.EqualTo("replacement 1\nreplacement 2\n"));
         }
 
         [TestCase("replacement line")]
